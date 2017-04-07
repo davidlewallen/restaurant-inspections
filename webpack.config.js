@@ -10,6 +10,10 @@ module.exports = {
         test: /\.jsx?$/,
         loader: 'eslint',
         exclude: /node_modules/,
+        options: {
+          failOnWarning: false,
+          failOnError: false,
+        },
       },
     ],
     loaders: [
